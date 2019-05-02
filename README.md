@@ -3,6 +3,7 @@ nano-signing
 
 A minimalistic public-key signing framework for TS / JS environments based on TweetNaCl and ED25519.
 
+<br />
 
 ## Installation
 
@@ -14,9 +15,11 @@ yarn add "nxtep-io/nano-signing";
 npm install "github:nxtep-io/nano-signing";
 ```
 
+<br />
 
 ## Getting Started
 
+<br />
 
 **Key Pair Management**
 
@@ -50,7 +53,9 @@ const signer = helper.keyPair({
 });
 ```
 
-Changing default encoding for the keyPair.
+Changing default encoding for the KeyPair. 
+
+Supported encodings: `ascii`, `utf8`, `utf16le/ucs2`, `base64`, `binary/latin-1`, and `hex`.
 
 ```typescript
 // Generates a random signer keypair
@@ -58,6 +63,10 @@ const signer = helper.keyPair({
   encoding: 'base64'
 });
 ```
+
+Further info at the  Node.JS [Buffer.toString()](https://nodejs.org/docs/latest/api/buffer.html#buffer_buffer) official documentation.
+
+<br />
 
 **Data Signing**
 
@@ -80,9 +89,13 @@ Validates existing signature against simple data signature using an existing pub
 const signature = signer.verify(originalData, candidateSignature, publicKey);
 ```
 
+<br />
+
 ## API Docs
 
 Check the published Github Page at https://nxtep-io.github.io/nano-signing/
+
+<br />
 
 ## License
 
