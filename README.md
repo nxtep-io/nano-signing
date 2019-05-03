@@ -1,7 +1,7 @@
 nano-signing
 ============
 
-A minimalistic public-key signing framework for TS / JS environments based on TweetNaCl and ED25519.
+A minimalistic public-key signing framework for TS / JS environments based on [TweetNaCl](https://github.com/dchest/tweetnacl-js) and [ED25519](https://ed25519.cr.yp.to/).
 
 <br />
 
