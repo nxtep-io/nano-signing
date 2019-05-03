@@ -12,7 +12,8 @@
     "sourceMap": true,
     "inlineSources": true,
     "outDir": "./dist",
-    "declaration": false,
+    "declaration": true,
+    "declarationDir": "./dist/types",
     "lib": [
       "es2017",
       "dom"
